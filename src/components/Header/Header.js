@@ -39,7 +39,7 @@ export default function Header() {
             className="btn btn-ghost normal-case text-3xl text-emerald-500"
           >
             {/* <img alt="" src={logo} style={{ width: "120px" }} /> */}
-            <h1>Learna</h1>
+            <h1>WebConcepts.io</h1>
           </Link>
         </div>
         <div className="navbar-end relative">
