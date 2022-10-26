@@ -7,7 +7,7 @@ export default function Coureses() {
   return (
     <div className="lg:flex lg:flex-row flex-col">
       <div className="lg:w-1/4 pt-20 bg-gray-200">
-        <h4 className="text-2xl pb-3">All categories</h4>
+        <h4 className="text-2xl pb-3">All Categories</h4>
 
         <ul className="menu menu-compact lg:menu-normal  w-56 mx-auto p-2 rounded-box">
           {items.map((item) => (
