@@ -14,7 +14,7 @@ export default function Blog() {
               >
                 CORS
               </a>
-              <p className="text-gray-600">26 OCT 2022</p>
+              <p className="text-gray-600">24 OCT 2022</p>
             </div>
           </div>
           <div className="sm:col-span-3 lg:col-span-2">
@@ -44,7 +44,7 @@ export default function Blog() {
               >
                 Firebase
               </a>
-              <p className="text-gray-600">15 Sep 2022</p>
+              <p className="text-gray-600">25 OCT 2022</p>
             </div>
           </div>
           <div className="sm:col-span-3 lg:col-span-2">
@@ -74,7 +74,7 @@ export default function Blog() {
               >
                 Implement authentication
               </a>
-              <p className="text-gray-600">28 Dec 2022</p>
+              <p className="text-gray-600">26 OCT 2022</p>
             </div>
           </div>
           <div className="sm:col-span-3 lg:col-span-2">
@@ -104,7 +104,7 @@ export default function Blog() {
               >
                 Private Route
               </a>
-              <p className="text-gray-600">28 OCT 2022</p>
+              <p className="text-gray-600">27 OCT 2022</p>
             </div>
           </div>
           <div className="sm:col-span-3 lg:col-span-2">
