@@ -66,9 +66,8 @@ export default function Login() {
         <div className="text-center text-white lg:text-left">
           <h1 className="text-5xl font-bold">Login now!</h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+           “To remember our login details, we use the Remember Password Option displayed in Official site or work in an email account or any social / login to your sites.
+Don't forget to turn it off. Otherwise It also leaks data risk of being stolen.”
           </p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -105,15 +104,15 @@ export default function Login() {
               <p className="text-center">Or</p>
               <button
                 onClick={handleGoogleSignIn}
-                className="btn btn-outline btn-success mb-2"
+                className="btn btn-outline btn-secondary mb-2"
               >
-                Google
+                Log In with Google
               </button>
               <button
                 onClick={handleGithubSignIn}
-                className="btn btn-outline btn-success"
+                className="btn btn-outline btn-accent"
               >
-                GitHub
+                Log in with GitHub
               </button>
               <label className="label">
                 <h3 className="label-text-alt ">
