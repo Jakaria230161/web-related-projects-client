@@ -1,7 +1,7 @@
 # WebConcepts.io
 
-I think what makes 'Jeopardy!' special is that, among all the quiz and game shows out there, ours tends to encourage learning.
-"Everyone loves sport. And everyone loves a quiz."
+“We love what we do and we do what our clients love & work with great clients all over the world to create thoughtful and purposeful websites.”
+“Learning HTML and CSS is a lot more challenging than it used to be. Responsive web design adds more layers of complexity to design and develop websites.”
 
 
 ## Live Link

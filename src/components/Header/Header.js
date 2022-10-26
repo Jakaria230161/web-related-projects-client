@@ -19,7 +19,7 @@ export default function Header() {
   };
   return (
     <div>
-      <div className="z-40 px-24 navbar lg:bg-neutral bg-current d-flex justify-between">
+      <div className="z-40 px-24 navbar lg:bg-gray-900 rounded-sm d-flex justify-between">
         <div className="navbar-start  hidden lg:flex">
           <ul className="menu menu-horizontal p-0 text-white">
             <li>
