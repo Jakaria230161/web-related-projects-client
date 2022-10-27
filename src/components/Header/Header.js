@@ -69,13 +69,13 @@ export default function Header() {
               className="menu menu-compact dropdown-content  p-2 shadow bg-base-100 rounded-box w-52 absolute top-20 right-0"
             >
               <li>
-                <Link to="">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="">Articles</Link>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
-                <Link to="">About Me</Link>
+                <Link to="/courese">Course</Link>
               </li>
             </ul>
           </div>
