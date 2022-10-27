@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import { Form, Link, useNavigate } from "react-router-dom";
-// import logo from "../../assets/images/learna.png";
 import { FaUser } from "react-icons/fa";
 import { authContext } from "../../context/UserContext";
 export default function Header() {
@@ -21,7 +20,7 @@ export default function Header() {
   };
   return (
     <div>
-      <div className="z-40 px-24 navbar lg:bg-green-900 hover:bg-green-700 rounded-sm d-flex justify-between">
+      <div className="z-40 px-24 navbar lg:bg-green-800  rounded-sm d-flex justify-between">
         <div className="navbar-start  hidden lg:flex">
           <ul className="menu menu-horizontal text-2xl p-0 text-white">
             <li>
