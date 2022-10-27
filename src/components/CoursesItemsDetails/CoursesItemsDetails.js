@@ -19,12 +19,14 @@ export default function CoursesItemsDetails() {
            <Pdf targetRef={ref} filename="code-example.pdf">
         {({ toPdf }) => <button onClick={toPdf}><span className="btn btn-outline btn-secondary">Download Pdf</span></button>}
       </Pdf>
-          <p ref={ref}>
-            <p>Categories id : {category_id}</p>
-            <p>Price : {price}</p>
-            <p>Details : {details}</p>
-            <p>Published date: {published_date}</p>
+          <div className="border rounded-xl my-8 mx-6 py-8">
+            <p ref={ref}>
+            <p className="font-semibold">Categories id : {category_id}</p>
+            <p className="font-semibold">Price : {price}</p>
+            <p className="font-semibold">Details : {details}</p>
+            <p className="font-semibold">Published date: {published_date}</p>
           </p>
+          </div>
           <div className="card-actions justify-end">
             <button className="btn btn-active btn-ghost">Purchase</button>
             <Link to={`/course/${item._id}/checkout`}><span className="btn btn-outline btn-primary">Get Premium</span></Link>

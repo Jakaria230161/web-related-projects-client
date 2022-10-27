@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
+import { authContext } from "../../context/UserContext";
 
 export default function CheckOut() {
   const item = useLoaderData();
+  const { user,email, photoURL } = useContext(authContext);
   const { image_url, title } = item;
   return (
     <div className="bg-white">
@@ -25,7 +27,7 @@ export default function CheckOut() {
             <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
               {title}
             </h1>
-            <div>
+            <div className="border rounded-lg my-8 mx-6">
               <h3 className="sr-only">Description</h3>
 
               <div className="space-y-6">
@@ -38,8 +40,17 @@ export default function CheckOut() {
                 </p>
               </div>
             </div>
+            <div className="border rounded-lg my-8 mx-6">
+              <h3 className="font-bold text-2xl">Name: {user.displayName}</h3>
+              <h4 className="font-semibold">Email : {user.email}</h4>
+              <div className="avatar">
+  <div className="w-24 mt-6 mb-5 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+    <img src={user.photoURL} alt='' />
+  </div>
+</div>
+            </div>
 
-            <div className="mt-10">
+            <div className=" border rounded-lg my-8 mx-6">
               <h2 className="text-sm font-medium text-gray-900">Details</h2>
 
               <div className="mt-4 space-y-6">
