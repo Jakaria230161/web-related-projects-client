@@ -143,7 +143,7 @@ If the user is not authenticated he will be redirected to the login page and the
               <a
                 href="/"
                 aria-label="Article"
-                className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
+                className="inline-block text-black transition-colors duration-200"
               >
                 <p className="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
                   What is Node? How does Node work?

@@ -1,11 +1,13 @@
-import React, { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Form, Link, useNavigate } from "react-router-dom";
 // import logo from "../../assets/images/learna.png";
 import { FaUser } from "react-icons/fa";
 import { authContext } from "../../context/UserContext";
 export default function Header() {
   const { user, userSignOut } = useContext(authContext);
   const navigate = useNavigate();
+
+  const [toggle, setToggle] = useState(true);
 
   const handleSignOut = () => {
     userSignOut()
@@ -19,7 +21,7 @@ export default function Header() {
   };
   return (
     <div>
-      <div className="z-40 px-24 navbar lg:bg-gray-900 hover:bg-sky-700 rounded-sm d-flex justify-between">
+      <div className="z-40 px-24 navbar lg:bg-green-900 hover:bg-green-700 rounded-sm d-flex justify-between">
         <div className="navbar-start  hidden lg:flex">
           <ul className="menu menu-horizontal text-2xl p-0 text-white">
             <li>
@@ -108,10 +110,31 @@ export default function Header() {
                   <span>
                     <FaUser />
                   </span>
-                </li>
+                  </li>
+                  <li>
+                  <div className="form-control">
+  <label className="cursor-pointer label">
+    <span className="label-text">{toggle ? "Dark "  : "Light "}</span>
+                        <input 
+                          onClick={() => { setToggle(!toggle) }}
+     type="checkbox" />
+  </label>
+</div>
+                    {/* <Form>
+                      
+                            <Form.Check
+                                className='p-2'
+                                type="switch"
+                                id="custom-switch"
+                                onClick={() => { setToggle(!toggle) }}
+                                label={toggle ? "Dark" : "Light"}
+                            />
+                        </Form> */}
+                  </li>
+
                 <li>
                   <Link to="/login">Login</Link>
-                </li>
+                  </li>
                 <li>
                   <Link to="/register">Register</Link>
                 </li>

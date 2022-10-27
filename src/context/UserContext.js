@@ -55,10 +55,10 @@ export default function UserContext({ children }) {
   //Set User
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      if (currentUser) {
+      // if (currentUser) {
         setUser(currentUser);
         setLoading(false);
-      }
+      // }
     });
     return () => {
       unsubscribe();
