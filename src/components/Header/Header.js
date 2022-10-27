@@ -19,9 +19,9 @@ export default function Header() {
   };
   return (
     <div>
-      <div className="z-40 px-24 navbar lg:bg-gray-900 rounded-sm d-flex justify-between">
+      <div className="z-40 px-24 navbar lg:bg-gray-900 hover:bg-sky-700 rounded-sm d-flex justify-between">
         <div className="navbar-start  hidden lg:flex">
-          <ul className="menu menu-horizontal p-0 text-white">
+          <ul className="menu menu-horizontal text-2xl p-0 text-white">
             <li>
               <Link to="/courese">Courses</Link>
             </li>
@@ -36,7 +36,7 @@ export default function Header() {
         <div className="navbar-center">
           <Link
             to="/"
-            className="btn btn-ghost normal-case text-3xl text-emerald-500"
+            className="btn btn-ghost normal-case text-4xl text-orange-500"
           >
             {/* <img alt="" src={logo} style={{ width: "120px" }} /> */}
             <h1>WebConcepts.io</h1>
@@ -78,7 +78,7 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <ul className="menu hidden lg:flex menu-horizontal p-0 text-white">
+          <ul className="menu hidden lg:flex menu-horizontal text-2xl p-0 text-white">
             {user?.uid ? (
               <>
                 <li>
