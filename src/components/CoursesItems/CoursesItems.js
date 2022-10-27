@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function CoursesItems({ item }) {
-  const { image_url, title, price } = item;
+  const { image_url, title, price} = item;
   return (
     <div>
       <div className="group relative">
@@ -20,12 +20,13 @@ export default function CoursesItems({ item }) {
                 <span aria-hidden="true" className="absolute inset-0"></span>
                 {title}
               </Link>
+
             </h3>
           </div>
           <p className="text-sm font-medium text-gray-900">${price}</p>
         </div>
       </div>
-      <button className="btn btn-outline btn-sm">
+      <button className="btn btn-outline btn-primary btn-sm">
         <Link to={`/course/${item._id}`}>Details</Link>
       </button>
     </div>

@@ -4,7 +4,7 @@ import Pdf from "react-to-pdf";
 
 export default function CoursesItemsDetails() {
   const item = useLoaderData();
-  const { image_url, title, details , category_id, price} = item;
+  const { image_url, title, details , category_id, price,published_date} = item;
   console.log(item);
   const ref = React.createRef();
 
@@ -22,13 +22,12 @@ export default function CoursesItemsDetails() {
           <p ref={ref}>
             <p>Categories id : {category_id}</p>
             <p>Price : {price}</p>
-            <span>
-              Details : {details}
-            </span>
+            <p>Details : {details}</p>
+            <p>Published date: {published_date}</p>
           </p>
           <div className="card-actions justify-end">
-            <button className="btn btn-active btn-ghost">Listen</button>
-            <Link to={`/course/${item._id}/checkout`}><span className="btn btn-outline btn-primary">CheckOut</span></Link>
+            <button className="btn btn-active btn-ghost">Purchase</button>
+            <Link to={`/course/${item._id}/checkout`}><span className="btn btn-outline btn-primary">Get Premium</span></Link>
           </div>
         </div>
       </div>

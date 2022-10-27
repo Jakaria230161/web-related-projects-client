@@ -12,7 +12,7 @@ export default function Coureses() {
         <ul className="menu menu-compact lg:menu-normal  w-56 mx-auto p-2 rounded-box">
           {items.map((item) => (
             <li
-              className="border-solid border-2 border-indigo-600 mb-5 rounded-box"
+              className="border-solid border-2 bg-blue-800 text-justify text-white border-indigo-600 mb-5 font-bold rounded-box"
               key={item.category_id}
             >
               <Link to={`/course/${item._id}`}>{item.title}</Link>
