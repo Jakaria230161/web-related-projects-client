@@ -5,10 +5,12 @@
 
 
 ## Live Link
-Hosted in Netlify -> [WebConcepts.io]()
+Hosted in firebase -> [WebConcepts.io](https://techo-5f8e5.firebaseapp.com/)
+Server side GitHub repo -> [GitHub server side](https://github.com/programming-hero-web-course1/b610-lerning-platform-server-side-Jakaria230161)
+Client side GitHub repo -> [GitHub client server](https://github.com/programming-hero-web-course1/b610-learning-platform-client-side-Jakaria230161)
 
 ## WebConcepts.io LINK
-
+ 
 ## React Router Dom v6.4 
 Documentation Link -> [Link](https://reactrouter.com/en/main/start/overview)
 
